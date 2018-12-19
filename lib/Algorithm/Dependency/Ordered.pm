@@ -1,10 +1,7 @@
 package Algorithm::Dependency::Ordered;
+# ABSTRACT: Implements an ordered dependency hierarchy
 
 =pod
-
-=head1 NAME
-
-Algorithm::Dependency::Ordered - Implements an ordered dependency hierarchy
 
 =head1 DESCRIPTION
 
@@ -89,30 +86,8 @@ sub schedule {
 
 =pod
 
-=head1 SUPPORT
-
-Bugs should be submitted via the CPAN bug tracker, located at
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-Dependency>
-
-For general comments, contact the author.
-
-=head1 AUTHOR
-
-Adam Kennedy E<lt>adamk@cpan.orgE<gt>
-
 =head1 SEE ALSO
 
 L<Algorithm::Dependency>
-
-=head1 COPYRIGHT
-
-Copyright 2003 - 2009 Adam Kennedy.
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-The full text of the license can be found in the
-LICENSE file included with this module.
 
 =cut

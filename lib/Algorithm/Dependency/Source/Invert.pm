@@ -1,10 +1,7 @@
 package Algorithm::Dependency::Source::Invert;
+# ABSTRACT: Logically invert a source
 
 =pod
-
-=head1 NAME
-
-Algorithm::Dependency::Source::Invert - Logically invert a source
 
 =head1 SYNOPSIS
 
@@ -52,30 +49,8 @@ sub new {
 
 =pod
 
-=head1 SUPPORT
-
-To file a bug against this module, use the CPAN bug tracking system
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-Dependency>
-
-For other comments, contact the author.
-
-=head1 AUTHOR
-
-Adam Kennedy <adamk@cpan.org>
-
 =head1 SEE ALSO
 
 L<Algorithm::Dependency::Source>, L<Algorithm::Dependency::Source::HoA>
-
-=head1 COPYRIGHT
-
-Copyright 2003 - 2009 Adam Kennedy.
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-The full text of the license can be found in the
-LICENSE file included with this module.
 
 =cut

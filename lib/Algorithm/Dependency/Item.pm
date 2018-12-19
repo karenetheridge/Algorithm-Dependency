@@ -1,10 +1,7 @@
 package Algorithm::Dependency::Item;
+# ABSTRACT: Implements an item in a dependency hierarchy.
 
 =pod
-
-=head1 NAME
-
-Algorithm::Dependency::Item - Implements an item in a dependency hierarchy.
 
 =head1 DESCRIPTION
 
@@ -71,31 +68,8 @@ sub depends { @{$_[0]->{depends}} }
 
 =pod
 
-=head1 SUPPORT
-
-For general comments, contact the author.
-
-To file a bug against this module, in a way you can keep track of, see the
-CPAN bug tracking system.
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-Dependency>
-
-=head1 AUTHOR
-
-Adam Kennedy E<lt>adamk@cpan.orgE<gt>
-
 =head1 SEE ALSO
 
 L<Algorithm::Dependency>
-
-=head1 COPYRIGHT
-
-Copyright 2003 - 2009 Adam Kennedy.
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-The full text of the license can be found in the
-LICENSE file included with this module.
 
 =cut

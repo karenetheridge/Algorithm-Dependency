@@ -1,10 +1,7 @@
 package Algorithm::Dependency;
+# ABSTRACT: Base class for implementing various dependency trees
 
 =pod
-
-=head1 NAME
-
-Algorithm::Dependency - Base class for implementing various dependency trees
 
 =head1 SYNOPSIS
 
@@ -358,31 +355,9 @@ Currently readonly. Make the whole thing writable, so the module can be
 used as the core of an actual dependency application, as opposed to just
 being a tool.
 
-=head1 SUPPORT
-
-Bugs should be submitted via the CPAN bug tracker, located at
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-Dependency>
-
-For general comments, contact the author.
-
-=head1 AUTHOR
-
-Adam Kennedy E<lt>adamk@cpan.orgE<gt>
-
 =head1 SEE ALSO
 
 L<Algorithm::Dependency::Ordered>, L<Algorithm::Dependency::Item>,
 L<Algorithm::Dependency::Source>, L<Algorithm::Dependency::Source::File>
-
-=head1 COPYRIGHT
-
-Copyright 2003 - 2009 Adam Kennedy.
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-The full text of the license can be found in the
-LICENSE file included with this module.
 
 =cut
