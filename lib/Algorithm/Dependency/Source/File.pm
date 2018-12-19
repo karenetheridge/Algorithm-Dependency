@@ -55,12 +55,8 @@ use 5.005;
 use strict;
 use Algorithm::Dependency::Source ();
 
-use vars qw{$VERSION @ISA};
-BEGIN {
-	$VERSION = '1.111';
-	@ISA     = 'Algorithm::Dependency::Source';
-}
-
+our $VERSION = '1.111';
+our @ISA     = 'Algorithm::Dependency::Source';
 
 
 

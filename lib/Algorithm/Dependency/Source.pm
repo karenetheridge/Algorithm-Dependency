@@ -23,13 +23,7 @@ use strict;
 use Algorithm::Dependency ();
 use Params::Util qw{_SET};
 
-use vars qw{$VERSION};
-BEGIN {
-	$VERSION = '1.111';
-}
-
-
-
+our $VERSION = '1.111';
 
 
 #####################################################################

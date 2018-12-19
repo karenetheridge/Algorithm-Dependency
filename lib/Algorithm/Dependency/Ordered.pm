@@ -26,14 +26,8 @@ use 5.005;
 use strict;
 use Algorithm::Dependency ();
 
-use vars qw{$VERSION @ISA};
-BEGIN {
-	$VERSION = '1.111';
-	@ISA     = 'Algorithm::Dependency';
-}
-
-
-
+our $VERSION = '1.111';
+our @ISA     = 'Algorithm::Dependency';
 
 
 sub schedule {
