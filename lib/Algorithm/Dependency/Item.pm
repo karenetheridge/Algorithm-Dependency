@@ -4,12 +4,12 @@ package Algorithm::Dependency::Item;
 
 =head1 NAME
 
-Algorithm::Dependency::Item - Implements an item in a dependency heirachy.
+Algorithm::Dependency::Item - Implements an item in a dependency hierarchy.
 
 =head1 DESCRIPTION
 
 The Algorithm::Dependency::Item class implements a single item within the
-dependency heirachy. It's quite simple, usually created from within a source,
+dependency hierarchy. It's quite simple, usually created from within a source,
 and not typically created directly. This is provided for those implementing
 their own source. ( See L<Algorithm::Dependency::Source> for details ).
 

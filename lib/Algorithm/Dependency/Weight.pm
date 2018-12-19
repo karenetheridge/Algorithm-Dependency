@@ -36,7 +36,7 @@ In dependency systems, it can often be very useful to calculate
 an aggregate or sum for one or all items. For example, to find
 the "naive install weight" of a Perl distribution (where "naive"
 means you treat each distribution equally), you would want the
-distribtion (1) + all its dependencies (n) + all B<their>
+distribution (1) + all its dependencies (n) + all B<their>
 dependencies (n2) recursively downwards.
 
 If calculated using a normal L<Algorithm::Dependency> object, the

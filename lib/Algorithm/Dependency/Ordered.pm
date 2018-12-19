@@ -4,7 +4,7 @@ package Algorithm::Dependency::Ordered;
 
 =head1 NAME
 
-Algorithm::Dependency::Ordered - Implements an ordered dependency heirachy
+Algorithm::Dependency::Ordered - Implements an ordered dependency hierarchy
 
 =head1 DESCRIPTION
 

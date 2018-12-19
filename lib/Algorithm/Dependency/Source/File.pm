@@ -4,7 +4,7 @@ package Algorithm::Dependency::Source::File;
 
 =head1 NAME
 
-Algorithm::Dependency::Source::File - File source for dependency heirachys
+Algorithm::Dependency::Source::File - File source for dependency hierarchies
 
 =head1 DESCRIPTION
 
@@ -21,7 +21,7 @@ ignored as comments.
 
 For a single item line, only word characters will be used. A 'word character'
 consists of all letters and numbers, and the underscore '_' character.
-Anything that is not a word character will be assumed to be a seperator.
+Anything that is not a word character will be assumed to be a separator.
 
 The first word will be used as the name or id of the item, and any further
 words in the line will be used as other items that this one depends on. For
@@ -36,10 +36,10 @@ example, all of the following are legal.
   # Depending on multiple others
   Bin Foo Bar
 
-  # We can use different seperators
+  # We can use different separators
   One:Two|Three-Four+Five=Six Seven
 
-  # We can also use multiple non-word characters as seperators
+  # We can also use multiple non-word characters as separators
   This&*&^*&File:  is& & & :::REALLY()Neat
 
 From the examples above, it should be easy to create your own files.

@@ -4,12 +4,12 @@ package Algorithm::Dependency::Source;
 
 =head1 NAME
 
-Algorithm::Dependency::Source - Implements a source of heirachy items
+Algorithm::Dependency::Source - Implements a source of hierarchy items
 
 =head1 DESCRIPTION
 
 The Algorithm::Dependency::Source class provides an abstract parent class for
-implementing sources for the heirachy data the algorithm will use. For an
+implementing sources for the hierarchy data the algorithm will use. For an
 example of an implementation of this, see
 L<Algorithm::Dependency::Source::File>, which is bundled with the main
 L<Algorithm::Dependency> package.
@@ -37,9 +37,9 @@ Although you cannot directly use the C<new> constructor for
 C<Algorithm::Dependency::Source>, it will work the same in all subclasses.
 
 The constructor takes zero or more subclass specific arguments to define the
-location of the source of the items, and returns a new object. Alrough it
+location of the source of the items, and returns a new object. Although it
 may check that the arguments you passed are valid, the source will usually
-NOT actually load the items from the source, instead defering the loading
+NOT actually load the items from the source, instead deferring the loading
 until you need to use the items.
 
 Returns a new object on success, or C<undef> on error.
@@ -161,7 +161,7 @@ sub items {
 
 =head2 missing_dependencies
 
-By default, we are leniant with missing dependencies if the item is neved 
+By default, we are lenient with missing dependencies if the item is never 
 used. For systems where having a missing dependency can be very bad, the 
 C<missing_dependencies> method checks all Items to make sure their 
 dependencies exist.

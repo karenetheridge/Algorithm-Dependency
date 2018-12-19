@@ -36,11 +36,11 @@ Algorithm::Dependency - Base class for implementing various dependency trees
 =head1 DESCRIPTION
 
 Algorithm::Dependency is a framework for creating simple read-only
-dependency heirachies, where you have a set of items that rely on other
+dependency hierarchies, where you have a set of items that rely on other
 items in the set, and require actions on them as well.
 
 Despite the most visible of these being software installation systems like
-the CPAN installer, or debian apt-get, they are usefull in other situations.
+the CPAN installer, or Debian apt-get, they are useful in other situations.
 This module intentionally uses implementation-neutral words, to avoid
 confusion.
 
@@ -63,9 +63,9 @@ dynamically.
 =head2 General Description
 
 Algorithm::Dependency implements algorithms relating to dependency
-heirachies. To use this framework, all you need is a source for the master
+hierarchies. To use this framework, all you need is a source for the master
 list of all the items, and a list of those already selected. If your
-dependency heirachy doesn't require the concept of items that are already
+dependency hierarchy doesn't require the concept of items that are already
 selected, simply don't pass anything to the constructor for it.
 
 Please note that the class Algorithm::Dependency does NOT implement an
@@ -75,13 +75,13 @@ it will not place B before A in the schedule. This makes it unsuitable for
 things like software installers, as they typically would need B to be
 installed before A, or the installation of A would fail.
 
-For dependency heirachies requiring the items to be acted on in a particular
+For dependency hierarchies requiring the items to be acted on in a particular
 order, either top down or bottom up, see L<Algorithm::Dependency::Ordered>.
 It should be more applicable for your needs. This is the the subclass you
 would probably use to implement a simple ( non-versioned ) package
-installation system. Please note that an ordered heirachy has additional
+installation system. Please note that an ordered hierarchy has additional
 constraints. For example, circular dependencies ARE legal in a
-non-ordered heirachy, but ARE NOT legal in an ordered heirachy.
+non-ordered hierarchy, but ARE NOT legal in an ordered hierarchy.
 
 =head2 Extending
 
@@ -302,7 +302,7 @@ Given a list of one or more item names, the C<depends> method will return,
 as a reference to an array, the ordered list of items you should act upon.
 
 This would be the original names provided, plus those added to satisfy
-dependencies, in the prefered order of action. For the normal algorithm,
+dependencies, in the preferred order of action. For the normal algorithm,
 where order it not important, this is alphabetical order. This makes it
 easier for someone watching a program operate on the items to determine
 how far you are through the task and makes any logs easier to read.
