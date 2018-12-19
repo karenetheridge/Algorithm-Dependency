@@ -57,7 +57,7 @@ use Algorithm::Dependency::Source ();
 
 use vars qw{$VERSION @ISA};
 BEGIN {
-	$VERSION = '1.110';
+	$VERSION = '1.111';
 	@ISA     = 'Algorithm::Dependency::Source';
 }
 
