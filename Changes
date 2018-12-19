@@ -1,5 +1,8 @@
 Revision history for Perl extension Algorithm-Dependency
 
+{{$NEXT}}
+        - distribution tooling updates
+
 1.110     2009-04-14
 	- Upgrading to Module::Install 0.83
 

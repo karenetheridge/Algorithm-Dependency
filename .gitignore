@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/Algorithm-Dependency-*/
+/Algorithm-Dependency-*.tar.gz
