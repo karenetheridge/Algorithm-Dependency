@@ -18,7 +18,7 @@ use 5.005;
 use strict;
 use Algorithm::Dependency ();
 
-our $VERSION = '1.111';
+our $VERSION = '1.112';
 
 
 #####################################################################

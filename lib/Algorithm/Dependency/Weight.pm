@@ -66,7 +66,7 @@ use List::Util            ();
 use Algorithm::Dependency ();
 use Params::Util qw{_INSTANCE _STRING};
 
-our $VERSION = '1.111';
+our $VERSION = '1.112';
 
 
 #####################################################################

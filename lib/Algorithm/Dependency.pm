@@ -96,7 +96,7 @@ use Params::Util qw{_INSTANCE _ARRAY};
 use Algorithm::Dependency::Item   ();
 use Algorithm::Dependency::Source ();
 
-our $VERSION = '1.111';
+our $VERSION = '1.112';
 
 
 #####################################################################

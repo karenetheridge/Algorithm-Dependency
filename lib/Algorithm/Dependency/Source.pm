@@ -20,7 +20,7 @@ use strict;
 use Algorithm::Dependency ();
 use Params::Util qw{_SET};
 
-our $VERSION = '1.111';
+our $VERSION = '1.112';
 
 
 #####################################################################
