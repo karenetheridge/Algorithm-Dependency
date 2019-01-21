@@ -59,6 +59,8 @@ dynamically.
 
 =head2 General Description
 
+=for stopwords versioned
+
 Algorithm::Dependency implements algorithms relating to dependency
 hierarchies. To use this framework, all you need is a source for the master
 list of all the items, and a list of those already selected. If your
