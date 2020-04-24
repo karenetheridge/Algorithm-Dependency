@@ -1,6 +1,7 @@
 Revision history for Perl extension Algorithm-Dependency
 
 {{$NEXT}}
+        - restore prerequisite version declarations from version 1.110
 
 1.111     2018-12-22 01:42:08Z
         - distribution tooling updates
