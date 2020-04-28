@@ -293,7 +293,7 @@ reference to an empty array if no other items are needed, or C<undef>
 on error.
 
 NOTE: The result of C<depends> is ordered by an internal C<sort>
-irrespective of the ordering provided by the dependecy handler.  Use
+irrespective of the ordering provided by the dependency handler.  Use
 L<Algorithm::Dependency::Ordered> and C<schedule> to use the most
 common ordering (process sequence)
 
