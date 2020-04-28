@@ -5,6 +5,38 @@ package Algorithm::Dependency;
 
 =head1 SYNOPSIS
 
+Typical Usage: Ordering based on dependency requirements
+  
+  use Algorithm::Dependency::Ordered;
+  use Algorithm::Dependency::Source::HoA;
+  
+  my $deps = {
+    core  => [ ],
+    a     => [ 'core' ],
+    b     => [ 'a' ]
+    this  => [ ],
+    that  => [ ],
+  };
+  my $deps_source = Algorithm::Dependency::Source::HoA->new( $deps );
+
+  my $dep = Algorithm::Dependency::Ordered->new(
+    source   => $deps_source,
+    selected => [ 'this', 'that' ], # Items we have processed elsewhere or have already satisfied
+  )
+  or die 'Failed to set up dependency algorithm';
+
+  my $also = $dep->schedule_all();
+  # Returns: ['core', 'a', 'b'] -- ie: installation-order. Whereas using base
+  # Algorithm::Dependency would return sorted ['a', 'b', 'core']
+
+  my $also = $dep->schedule( 'b' );
+  # Returns: ['core', 'a', 'b'] -- installation order, including ourselves
+
+  my $also = $dep->depends( 'b' );
+  # Returns: ['a', 'core'] -- sorted order, not including ourselves
+
+Base Classes
+
   use Algorithm::Dependency;
   use Algorithm::Dependency::Source::File;
   
@@ -16,7 +48,7 @@ package Algorithm::Dependency;
   my $dep = Algorithm::Dependency->new(
       source   => $data_source,
       selected => [ 'This', 'That' ]
-      ) or die 'Failed to set up dependency algorithm';
+  ) or die 'Failed to set up dependency algorithm';
   
   # For the item 'Foo', find out the other things we also have to select.
   # This WON'T include the item we selected, 'Foo'.
@@ -260,6 +292,11 @@ The method returns a reference to an array of item names on success, a
 reference to an empty array if no other items are needed, or C<undef>
 on error.
 
+NOTE: The result of C<depends> is ordered by an internal C<sort>
+irrespective of the ordering provided by the dependecy handler.  Use
+L<Algorithm::Dependency::Ordered> and C<schedule> to use the most
+common ordering (process sequence)
+
 =cut
 
 sub depends {
@@ -297,8 +334,11 @@ sub depends {
 
 =head2 schedule $name1, ..., $nameN
 
-Given a list of one or more item names, the C<depends> method will return,
-as a reference to an array, the ordered list of items you should act upon.
+Given a list of one or more item names, the C<depends> method will
+return, as a reference to an array, the ordered list of items you
+should act upon in whichever order this particular dependency handler
+uses - see L<Algorithm::Dependency::Ordered> for one that implements
+the most common ordering (process sequence).
 
 This would be the original names provided, plus those added to satisfy
 dependencies, in the preferred order of action. For the normal algorithm,
