@@ -23,7 +23,7 @@ use 5.005;
 use strict;
 use Algorithm::Dependency ();
 
-our $VERSION = '1.112';
+our $VERSION = '1.113';
 our @ISA     = 'Algorithm::Dependency';
 
 

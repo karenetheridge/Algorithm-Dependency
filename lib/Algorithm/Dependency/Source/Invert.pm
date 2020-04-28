@@ -19,7 +19,7 @@ use strict;
 use Params::Util '_INSTANCE';
 use Algorithm::Dependency::Source::HoA ();
 
-our $VERSION = '1.112';
+our $VERSION = '1.113';
 our @ISA     = 'Algorithm::Dependency::Source::HoA';
 
 
